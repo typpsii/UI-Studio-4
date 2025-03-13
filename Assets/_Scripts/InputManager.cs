@@ -9,7 +9,7 @@ public class InputManager : MonoBehaviour
     public UnityEvent OnSettingsMenu = new();
     void Update()
     {
-        if (input.GetKey(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             OnSettingsMenu?.Invoke();
         }
